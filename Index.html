@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bai thi ket thuc hoc phan cua Truong Minh Hieu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+/* tạo parallax effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* anh nền header */
+.bgimg-1 {
+  background-image: url('https://images.unsplash.com/photo-1504610926078-a1611febcad3?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  min-height: 80%;
+}
+/* ảnh phần sp */
+.bgimg-2 {
+  background-image: url("https://images.unsplash.com/photo-1484807352052-23338990c6c6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  min-height: 400px;
+}
+/* ảnh Liên Hệ */
+.bgimg-3 {
+  background-image: url("https://images.unsplash.com/photo-1559164874-889c03882368?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  min-height: 400px;
+}
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Tắt Parallax scrolling */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+</head>
+
+<body>
+<!-- thanh điều hướng -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">TRANG CHỦ</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> Sản Phẩm Của Chúng Tôi</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> SẢN PHẨM</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> LIÊN HỆ</a>
+    <a href="dangnhap.html" class="w3-bar-item w3-button">ĐĂNG NHẬP</a>
+    <a href="dangky.html" class="w3-bar-item w3-button">ĐĂNG KÝ</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Thanh điều hướng trên cửa sổ nhỏ hơn -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">Sản Phẩm Của Chúng Tôi</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">SẢN PHẨM</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">LIÊN HỆ</a>
+    <a href="dangnhap.html" class="w3-bar-item w3-button" onclick="toggleFunction()">ĐĂNG NHẬP</a>
+    <a href="dangky.html" class="w3-bar-item w3-button" onclick="toggleFunction()">ĐĂNG KÝ</a>
+    <a href="#" class="w3-bar-item w3-button">TÌM KIẾM</a>
+  </div>
+</div>
+
+<!-- tên và header  -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">HIEU<span class="w3-hide-small">HYPER</span> STORE</span>
+  </div>
+</div>
+
+<!-- sản phẩm top -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">Sản Phẩm Hàng Đầu Của HieuHyperStore</h3>
+  <p class="w3-center"><em>HyperPhone 15</em></p>
+  <p>HyperPhone 15 là sản phẩm đầu tay của HieuHyperStore và cũng là sản phẩm đã đi vào lịch sử trở thành một trong những chiếc điện thoại Made In Vietnam nổi tiếng nhất thế giới. Điện thoại HyperPhone 15 mới là một sự kết hợp hoàn hảo giữa thiết kế đẳng cấp và hiệu năng vượt trội. Với dung lượng lưu trữ lớn đến 1TB, người dùng có đủ không gian cho hàng ngàn hình ảnh, video và ứng dụng yêu thích. Điểm đáng chú ý là sự tích hợp của chip A19 Pro tiên tiến giúp chiếc điện thoại HyperPhone 15 phiên bản cao cấp nhất này hoạt động mượt mà và xử lý nhanh chóng mọi tác vụ.</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>HyperPhone 15, giá: 21.990.000 vnd</b></p><br>
+      <img src="C:\Users\DELL\OneDrive\Documents\CNTT-17-07\thietkeweb\65664646.png" width="470" height="410" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Hyperphone 15">
+    </div>
+
+    <!-- giấu text trên thiết bị nhỏ -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>Những tính năng nổi bật mà Hyperphone 15 sở hữu:<br>-Hiệu năng vượt trội, chụp zoom 5x. Nhờ sở hữu cấu hình ấn tượng, mẫu điện thoại cao cấp nhất của HieuHyperStore sẽ mang tới khả năng chụp hình xuất sắc cùng trải nghiệm giải trí, làm việc hoàn hảo cho người dùng.<br>-Hiệu năng bứt phá với chip A19 Pro
+        Nhờ chủ động trong việc sản xuất chip mà các mẫu HyperPhone luôn sở hữu một hiệu năng vượt trội.<br>-Dung lượng pin lớn, hỗ trợ sạc ngược cho phụ kiện
+        Nhờ việc có một kích thước lớn,HyperPhone 15 1TB sẽ có được một không gian thoải mái cho việc trang bị pin.<br>-Khung viền Titanium sang trọng, cứng cáp và nhẹ hơn
+        HieuHyperStore đã chính thức tạm biệt khung viền thép không gỉ và trang bị cho HyperPhone 15 phần khung viền Titanium. Điều này khiến cho phiên bản điện thoại cao cấp nhất của HieuHyperStore cứng cáp hơn nhưng lại đồng thời giảm được tổng trọng lượng. Nhờ vậy mà người dùng sẽ có được sự thoải mái trong việc cầm nắm, sử dụng trong thời gian dài.</p>
+    </div>
+  </div>
+  <p class="w3-large w3-center w3-padding-16">Hiệu Năng Dựa Trên Đánh Giá Của Chuyên Gia:</p>
+  <p class="w3-wide"><i class="fa fa-camera"></i>CHỤP ẢNH</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>GAMING</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-photo"></i>TÁC VỤ </p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+  </div>
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">91000+</span><br>
+    Khách hàng thân thiết
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">209+</span><br>
+    Đánh giá tốt tới từ các chuyên gia
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">90000+</span><br>
+    Khách Hàng Hài Lòng
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">160+</span><br>
+    Nhà Đầu Tư Cam Kết Hỗ Trợ
+  </div>
+</div>
+
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">SẢN PHẨM CỦA HIEUHYPERSTORE</span>
+  </div>
+</div>
+
+<!-- sản phẩm khác -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">SẢN PHẨM TƯƠNG TỰ</h3>
+  <p class="w3-center"><em>Upcoming Re-selling Products
+
+  <!-- grid động -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/a/s/asus-rog-phone-6-12gb-256gb-den_2.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Asus ROG Phone 6">
+      <br><p>Asus ROG Phone 16 <br> Giá: 17.990.000 vnd</p>
+      <br><button class="w3-button w3-padding-large w3-light-grey" type="submit"> Mua
+      </button>
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/n/u/nubia-redmagic-8s-pro_1.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Nubia RedMagic 8">
+      <br><p>Nubia RedMagic 8 <br> Giá: 19.990.000 vnd</p>
+      <br><button class="w3-button w3-padding-large w3-light-grey" type="submit"> Mua
+      </button>
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/x/i/xiaomi-redmi-note-13-pro-plus_1_1.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Xiami Redmi Note13 pro plus">
+      <br><p>Xiaomi Redmi Note 13 Pro Plus <br> Giá: 10.490.000 vnd</p>
+      <br><button class="w3-button w3-padding-large w3-light-grey" type="submit"> Mua
+      </button>
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-z-fold-5-xam-1_1__1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Galaxy Zfold 5">
+      <br><p>Galaxy Z fold 5 <br> Giá: 36.990.000 vnd</p>
+      <br><button class="w3-button w3-padding-large w3-light-grey" type="submit"> Mua
+      </button>
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/6/0/600x600-den--1--600x600.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="OPPO N3">
+      <br><p>OPPO N3 <br> Giá: 41.990.000 vnd</p>
+      <br><button class="w3-button w3-padding-large w3-light-grey" type="submit"> Mua
+      </button>
+    
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://cdn2.cellphones.com.vn/x/media/catalog/product/s/a/samsung-galaxy-s24-ultra_6__2.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="S24 Ultra">
+      <br><p>S24 Ultra <br> Giá: 44.490.000 vnd</p>
+      <br><button class="w3-button w3-padding-large w3-light-grey" type="submit"> Mua
+      </button>
+    
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://cdn2.cellphones.com.vn/x/media/catalog/product/o/n/oneplus_11_-_black_-_rgb.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="OnePlus 11">
+      <br><p>OnePlus 11<br> Giá: 18.990.000 vnd</p>
+      <br><button class="w3-button w3-padding-large w3-light-grey" type="submit"> Mua
+      </button>
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://cdn2.cellphones.com.vn/x/media/catalog/product/i/p/iphone-15-pro-256gb_1.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Iphone 15 pro max">
+      <br><p>Iphone 15 Pro Max <br> Giá: 44.990.000 vnd</p>
+      <br><button class="w3-button w3-padding-large w3-light-grey" type="submit"> Mua
+      </button>
+    </div>
+    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">XEM THÊM</button>
+  </div>
+</div>
+
+<!-- full size image-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">Liên Hệ</span>
+  </div>
+</div>
+
+<!-- địa chỉ -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">ĐỊA CHỈ</h3>
+  <p class="w3-center"><em>HieuHyperStore Chân Thành Cảm Ơn Quý Khách!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="C:\Users\DELL\OneDrive\Documents\CNTT-17-07\thietkeweb\Screenshot 2024-03-12 1146594646435.png" class="w3-image w3-round" style="width:100%">
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Mễ Trì Hạ, Nam Từ Liêm, Thành Phố Hà Nội<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +84 0913483395<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: HieuHyperStore@gmail.com<br>
+      </div>
+      <p>Ghé thăm để dùng một cốc <i class="fa fa-coffee"></i>, hoặc để lại lời nhắn cho chúng tôi:</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> GỬI
+        </button> 
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+
+</footer>
+ 
+<script>
+// ảnh
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// style của navigation bar khi scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// bấm nút menu 
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
